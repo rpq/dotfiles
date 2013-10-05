@@ -9,5 +9,5 @@ fi
 alias vi="vim"
 
 # fab aliases
-alias ve="fab --fabfile=${HOME}/.local/usr/local/fabric-ve/fabfile"
+alias ve="fab --fabfile=${HOME}/fabric-ve/fabfile"
 alias ve-s="source ${HOME}/activate_ve.sh"
