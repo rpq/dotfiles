@@ -9,3 +9,5 @@
 [alias]
 	ctav = commit -av
 	ba = branch -av
+	co = checkout
+	st = status
