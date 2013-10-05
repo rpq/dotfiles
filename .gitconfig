@@ -3,3 +3,9 @@
 	name = ramon quezada
 [core]
 	excludesfile = /home/rpq/.gitignore
+	editor = vim
+[color]
+	ui = true
+[alias]
+	ctav = commit -av
+	ba = branch -av
