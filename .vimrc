@@ -22,11 +22,7 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 
-let mapleader = ","
-map <Leader>t :!python manage.py test survey
-
-syntax off
-" autocmd BufEnter * :syntax sync fromstart
+syntax on
 
 autocmd BufRead,BufNewFile *.py set tabstop=4 softtabstop=4 shiftwidth=4 
 autocmd BufRead,BufNewFile *.py call HighlightPast80Lines()
