@@ -1,2 +1,5 @@
+# run git config --global core.excludesfile ~/.gitignore
+# to apply
+
 *.pyc
 .*.swp

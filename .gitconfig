@@ -1,0 +1,5 @@
+[user]
+	email = rpq@winscores.com
+	name = ramon quezada
+[core]
+	excludesfile = /home/rpq/.gitignore
