@@ -13,3 +13,4 @@
 	co = checkout
 	st = status
 	l1 = log --oneline
+	ct = commit
