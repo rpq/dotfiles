@@ -1,5 +1,0 @@
-# ssh host shortcuts
-alias winscores="ssh rpq@winscores.com"
-alias mail="ssh rpq@mail.winscores.com"
-alias home="ssh rpq@rpq.no-ip.org"
-alias parents="ssh rpq@parents.superkidsnj.com"
