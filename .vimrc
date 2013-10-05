@@ -46,5 +46,3 @@ autocmd BufWritePost,FileWritePost *.coffee :silent !coffee -c <afile>
 
 autocmd BufEnter,BufRead,BufNewFile *.hb syntax off
 autocmd BufRead,BufNewFile *.py set background=dark
-
-:map <F12> :!kill -HUP `cat gunicorn/pid/gunicorn.pid`<CR>
