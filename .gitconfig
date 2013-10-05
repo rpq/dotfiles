@@ -9,5 +9,7 @@
 [alias]
 	ctav = commit -av
 	ba = branch -av
+	s = status -v
 	co = checkout
 	st = status
+	l1 = log --oneline
