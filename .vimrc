@@ -1,11 +1,16 @@
-fun HighlightPast80Lines()
-    highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-    match OverLength /\%80v.\+/
+fun HighlightPast80Characters()
+    highlight Past80Characters ctermbg=red ctermfg=white guibg=#592929
+    match Past80Characters /\%80v.\+/
 endfun
 
 fun HighlightEOLExtraWhiteSpace()
-    highlight EolWhiteSpace ctermbg=white ctermfg=white guibg=#592929
-    match EolWhiteSpace /\s\+$/
+    highlight EOLExtraWhiteSpace ctermbg=white ctermfg=white guibg=#592929
+    2match EOLExtraWhiteSpace /\s\+$/
+endfun
+
+fun HighlightPython()
+    call HighlightEOLExtraWhiteSpace()
+    call HighlightPast80Characters()
 endfun
 
 set hlsearch
@@ -17,6 +22,7 @@ set showmatch
 set history=1000
 set undolevels=1000
 set wildignore=*.swp,*.pyc,*.bak,*.class
+set fileformat=unix
 
 set tabstop=4
 set softtabstop=4
@@ -24,9 +30,8 @@ set shiftwidth=4
 
 syntax on
 
-autocmd BufRead,BufNewFile *.py set tabstop=4 softtabstop=4 shiftwidth=4 
-autocmd BufRead,BufNewFile *.py call HighlightPast80Lines()
-autocmd BufRead,BufNewFile *.py call HighlightEOLExtraWhiteSpace()
+autocmd BufRead,BufNewFile *.py set tabstop=4 softtabstop=4 shiftwidth=4  background=dark
+autocmd BufRead,BufEnter,BufRead,BufNewFile *.py call HighlightPython()
 
 autocmd BufRead,BufNewFile *.rb set tabstop=2 softtabstop=2 shiftwidth=2
 autocmd BufRead,BufNewFile *.sh set tabstop=2 softtabstop=2 shiftwidth=2
@@ -41,4 +46,3 @@ autocmd BufRead,BufNewFile *.yml set tabstop=2 softtabstop=2 shiftwidth=2
 autocmd BufWritePost,FileWritePost *.coffee :silent !coffee -c <afile>
 
 autocmd BufEnter,BufRead,BufNewFile *.hb syntax off
-autocmd BufRead,BufNewFile *.py set background=dark
