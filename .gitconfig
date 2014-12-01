@@ -7,6 +7,7 @@
 [color]
 	ui = true
 [alias]
+    ctv = commit -v
 	ctav = commit -av
 	ctam = commit -am
 	ba = branch -av
@@ -14,4 +15,6 @@
 	co = checkout
 	st = status
 	l1 = log --oneline
+    ls = log --stat
 	ct = commit
+    lf = "!sh -c \"git log --stat $1 -1\""
