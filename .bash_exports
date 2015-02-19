@@ -1,6 +1,7 @@
 export TERM=xterm-256color
 export EDITOR=vim
 export PATH=$HOME/.local/bin:/usr/local/bin:/usr/sbin:/sbin/:$PATH
+export PATH=$HOME/.local/usr/local/ruby-2.0.0-p247/bin:$PATH
 
 COLORONE="\[\e[1;32m\]"
 COLORTWO="\[\e[0;34m\]"
