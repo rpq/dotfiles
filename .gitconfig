@@ -9,6 +9,7 @@
 [alias]
     ctv = commit -v
 	ctav = commit -av
+    ctv = commit -v
 	ctam = commit -am
 	ba = branch -av
 	s = status -v
