@@ -60,3 +60,4 @@ let g:syntastic_check_on_wq = 0
 
 let mapleader=","
 nnoremap <Leader>b :let g:syntastic_auto_loc_list = 0
+set statusline=%F\ (%l,\ %c)
